@@ -1,51 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="styles.css">
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <main>
+    <div class="container">
+      <div class="left">
+        <div class="phone_bg"></div>
+        <div class="phone">
 
-  Samuel Green
-  Available to Walk
+          <div class="speaker"></div>
 
-  That sounds great. I’d be happy with that.
+          <div class="top_bar">
 
-  Could you send over some pictures of your dog, please?
+            <div class="back_arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-chevron-left">
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </div>
 
-  Here are a few pictures. She’s a happy girl!
+            <div class="profile_pic">
+              <img class="avatar" src="/images/avatar.jpg" alt="avatar" width="30px">
+            </div>
+            <div class="name_details">
+              <h3 class="full_name">Samuel Green</h3>
+              <p class="active_status">Available to Walk</p>
+            </div>
+            <div class="three_dots">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-dots-vertical" width="15"
+                height="15" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                <path d="M12 19m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                <path d="M12 5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+              </svg>
+            </div>
+          </div>
 
-  Can you make it?
+          <div class="mid_section">
 
-  She looks so happy! The time we discussed works. How long shall I take her out for?
+            <div class="received chats">
+              <p>That sounds great. I'd be happy with that.</p>
+            </div>
 
-  30 minute walk
-  $29
+            <div class="received chats">
+              <p>Could you send over some pictures of your dog, please?</p>
+            </div>
 
-  1 hour walk
-  $49
+            <div class="chats_images chats sent">
+              <img src="./images/dog-image-1.jpg" alt="dog image">
+              <img src="./images/dog-image-2.jpg" alt="dog image">
+              <img src="./images/dog-image-3.jpg" alt="dog image">
+            </div>
 
-  Type a message…
+            <div class="chats sent">
+              <p>Here are a few pictures. She's a happy girl!</p>
+            </div>
 
-  Simple booking
+            <div class="chats sent">
+              <p>Can you make it?</p>
+            </div>
 
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
+            <div class="received chats">
+              <p>She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            </div>
+
+            <div class="received_reward chats">
+              <div class="radio_btn"></div>
+              <div class="reward_text"><p>30 minute walk</p></div>
+              <div class="reward_amount"><p>$29</p></div>
+            </div>
+
+            <div class="received_reward chats">
+              <div class="radio_btn"></div>
+              <div class="reward_text"><p>1 hour walk</p></div>
+              <div class="reward_amount"><p>$49</p></div>
+            </div>
+
+            <div class="bottom_bar">
+              <p>Type a message…</p>
+              <img class="send_btn" src="" alt="">
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="right">
+
+        <div class="main_contents">
+
+          <h1 class="main_heading">Simple booking
+          </h1>
+          <p class="main_description">Stay in touch with our dog walkers through the chat interface. This makes it easy
+            to
+            discuss arrangements and make bookings. Once the walk has been completed you can rate
+            your walker and book again all through the chat.</p>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>

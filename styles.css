@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ## Colors */
+
+    /* ### Primary */
+
+    /* #### Text */
+    /*(sub-heading at the top of the app UI)*/
+    --Pale-Violet: hsl(276, 100%, 81%);
+
+    /*(chat on the left)*/
+    --Moderate-Violet: hsl(276, 55%, 52%);
+
+    /*(chat on the right)*/
+    --Desaturated-Dark-Violet: hsl(271, 15%, 43%);
+
+    /*-(placeholder-text)*/
+    --Grayish-Blue: hsl(206, 6%, 79%);
+
+    /*(main heading)*/
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+
+    /*(paragraph)*/
+    --Dark-Grayish-Violet: hsl(270, 7%, 64%);
+
+    /* #### Gradients These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient: */
+
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+    /* ### Secondary  */
+    --White: hsl(0, 0%, 100%);
+
+    /*(app background)*/
+    --Light-Grayish-Violet: hsl(270, 20%, 96%);
+
+    /*(submit button background)*/
+    --Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%);
+
+    /*(radio button outline)*/
+    --Very-Light-Magenta: hsl(289, 100%, 72%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    background-color: var(--bg-primary)
+}
+h1{
+    color: var(--Very-Dark-Desaturated-Violet);
+    font-size: 4rem;
+}
+p{
+    color: var(--Dark-Grayish-Violet);
+    font-size: .8rem;
+}
+img {
+    border-radius: 50%;
+  }
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.left {
+    min-width: 50%;
+    display: inline-flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding-right: 100px;
+}
+
+.phone_bg {
+    width: 520px;
+    height: 700px;
+    background-image: linear-gradient(to bottom, var(--Light-Magenta), var(--Light-Violet));
+    position: relative;
+    left: -80px;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+
+}
+
+.phone {
+    min-width: 250px;
+    height: 500px;
+    z-index: 3;
+    margin: 150px 0 0 -155px;
+    background-color: var(--Light-Grayish-Violet);
+    box-shadow: 40px 40px 80px -60px;
+    border-radius: 30px;
+    border:  10px solid white;
+    display: flex;
+    flex-direction: column;
+
+}
+.speaker{
+    width: 130px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    place-self: center;
+    margin-top: -10px;
+    z-index: 2;
+}
+.top_bar{
+    color: white;
+    width: 100%;
+    height: 85px;
+    background-image: linear-gradient(to right, var(--Light-Violet), var(--Light-Magenta));
+    z-index: 1;
+    margin-top: -20px;
+    border-radius: 30px 30px 10px 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px 10px 0 10px;
+}
+.avatar{
+    border: 2px solid white;
+}
+.name_details{
+    margin-left: 10px;
+
+}
+.full_name{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.active_status{
+    font-size: .8rem;
+    font-weight: 400;
+    color: var(--Pale-Violet);
+}
+.three_dots{
+    margin: auto 0px auto auto;
+}
+
+.chats{
+    width: 130px;
+    margin: 10px 0 0 10px;
+    padding: 6px;
+    background-color: #dfd5e4;
+    border-radius: 8px 8px 8px 0;
+}
+
+.received p{
+    color: var(--Moderate-Violet);
+}
+.sent{
+    margin: 10px 10px 0 auto;
+    border-radius: 8px 8px 0 8px;
+    background-color: var(--White);
+    color: var(--Desaturated-Dark-Violet);
+}
+
+.chats_images{
+    margin-top: 20px;
+    background-color: var(--Light-Grayish-Violet);
+    display: flex;
+    justify-content: space-between;
+}
+.chats_images img{
+    width: 35px;
+    border-radius: 10px;
+}
+.received.chats:nth-child(6) {
+    margin-top: 20px;
+}
+.received_reward {
+    color: white;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    padding: 8px;
+    background-color: var(--Light-Violet);
+}
+.radio_btn{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.reward_text p {
+    color: white;
+}
+.reward_amount{
+    margin: auto 0 auto auto;
+}
+.reward_amount p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.reward_text{
+    margin-left: 10px;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main_contents{
+    margin: 0 10em;
+}
