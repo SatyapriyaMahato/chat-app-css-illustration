@@ -68,8 +68,9 @@ img {
   }
 .container {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     display: flex;
+
 }
 
 .left {
@@ -93,9 +94,9 @@ img {
 
 .phone {
     min-width: 250px;
-    height: 500px;
+    height: 530px;
     z-index: 3;
-    margin: 150px 0 0 -155px;
+    margin: 140px 0 0 -155px;
     background-color: var(--Light-Grayish-Violet);
     box-shadow: 40px 40px 80px -60px;
     border-radius: 30px;
@@ -120,7 +121,7 @@ img {
     background-image: linear-gradient(to right, var(--Light-Violet), var(--Light-Magenta));
     z-index: 1;
     margin-top: -20px;
-    border-radius: 30px 30px 10px 10px;
+    border-radius: 28px 28px 10px 10px;
     display: flex;
     align-items: center;
     padding: 20px 10px 0 10px;
@@ -183,13 +184,13 @@ img {
     align-items: center;
     width: 150px;
     padding: 8px;
-    background-color: var(--Light-Violet);
+    background-image: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
 }
 .radio_btn{
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    border: 2px solid white;
+    border: 2px solid var(--Very-Light-Magenta);
 }
 
 .reward_text p {
@@ -206,11 +207,55 @@ img {
 .reward_text{
     margin-left: 10px;
 }
+.bottom_bar{
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+.submit_btn{
+    width: 25px;
+    height: 25px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 .right{
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .main_contents{
-    margin: 0 10em;
+    margin: 0 19em 0 5em;
+}
+.main_heading{
+    font-size: 5rem;
+}
+.main_description{
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+
+.phone_bg_rt {
+    width: 260px;
+    height: 600px;
+    background-color: hsl(291, 47%, 97%);
+    position: absolute;
+    border-radius: 400px 0 0 0;
+    z-index: -1;
+    margin-left: 460px;
+    margin-top: 100px;
+
 }
