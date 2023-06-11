@@ -84,6 +84,7 @@ img {
 .phone_bg {
     width: 520px;
     height: 700px;
+    margin-bottom: 40px;
     background-image: linear-gradient(to bottom, var(--Light-Magenta), var(--Light-Violet));
     position: relative;
     top: 0;
@@ -278,18 +279,23 @@ img {
         width: 600px;
         height: 550px;
         left: -300px;
+    
     }
     .phone{
-        margin-left: -400px;
-        margin-bottom: 4em;
+        margin-left: -420px;
+        margin-bottom: 100px;
     }
     .phone_bg_rt{
         margin: 0;
         right: -50px;
     }
     .main_contents{
-        margin: 4em;
+        margin: 10em 5em;
         text-align: center;
+    }
+    .main_description{
+        font-size: 1.7rem;
+        line-height: 2em;
     }
     .main_heading{
         font-size: 4rem;
